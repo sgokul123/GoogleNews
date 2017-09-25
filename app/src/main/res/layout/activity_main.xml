@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.googlenews.googlenews.view.MainActivity">
+
+  <RelativeLayout
+      android:id="@+id/linearLAyout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/holo_blue_dark"
+      android:orientation="horizontal"
+      >
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/buttonSports"
+        android:layout_width="wrap_content"
+        android:text="Sports"
+        android:textColor="@color/holo_white_dark"
+        android:background="@color/holo_blue_dark"
+        android:layout_height="wrap_content"
+     />
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/buttonNational"
+        android:layout_toRightOf="@+id/buttonSports"
+        android:layout_width="wrap_content"
+        android:background="@color/holo_blue_dark"
+        android:textColor="@color/holo_white_dark"
+
+        android:layout_marginLeft="-5dp"
+        android:layout_height="wrap_content"
+        android:text="Entertainment"
+       />
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/buttonPolitics"
+        android:layout_toRightOf="@+id/buttonNational"
+        android:layout_width="wrap_content"
+        android:background="@color/holo_blue_dark"
+        android:textColor="@color/holo_white_dark"
+
+        android:layout_marginLeft="-5dp"
+        android:layout_height="wrap_content"
+        android:text="Polytics"
+      />
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/buttonInternational"
+        android:layout_toRightOf="@+id/buttonPolitics"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="-5dp"
+        android:background="@color/holo_blue_dark"
+        android:textColor="@color/holo_white_dark"
+
+        android:layout_height="wrap_content"
+        android:text="Business"
+    />
+
+  </RelativeLayout>
+  <android.support.v7.widget.RecyclerView
+      android:layout_below="@+id/linearLAyout"
+      android:id="@+id/recylerViewNews"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+  </android.support.v7.widget.RecyclerView>
+  <FrameLayout
+      android:id="@+id/frameLayout"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"/>
+
+</RelativeLayout>
